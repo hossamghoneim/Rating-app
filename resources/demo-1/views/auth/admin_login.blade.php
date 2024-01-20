@@ -12,9 +12,9 @@
 
     <!--begin::Fonts-->
     @if ( isArabic() )
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     @else
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     @endif
     <!--end::Fonts-->
 
@@ -42,7 +42,7 @@
             <!--begin::Content-->
             <div class="d-flex flex-column flex-center pb-0 pb-lg-10 p-10 w-100">
                 <!--begin::Image-->
-                <img class="theme-light-show mx-auto mw-100 w-150px w-lg-350px mb-10 mb-lg-20" src="{{ asset('placeholder_images/logo_transparent.png') }}" alt="" />
+                <img class="theme-light-show mx-auto mw-100 w-150px w-lg-350px mb-10 mb-lg-20" src="{{ asset('dashboard-assets/demo-1/media/illustrations/dozzy-1/19.png') }}" alt="" />
                 <!--end::Image-->
                 <!--begin::Title-->
                 <h1 class="text-gray-800 fs-2qx fw-bold text-center mb-9">لوحة تحكم تطبيق التقييم</h1>

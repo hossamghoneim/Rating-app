@@ -10,10 +10,10 @@
 
 		<!--begin::Fonts-->
 		@if ( isArabic() )
-			<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-		@else
-			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-		@endif
+            <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        @else
+            <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+        @endif
 		<!--end::Fonts-->
 
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->

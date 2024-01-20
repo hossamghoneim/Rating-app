@@ -2941,7 +2941,7 @@ textarea.form-control-lg {
 .btn {
   --bs-btn-padding-x: 1.5rem;
   --bs-btn-padding-y: 0.775rem;
-  --bs-btn-font-family: 'Cairo', sans-serif ;
+  --bs-btn-font-family: 'Tajawal', sans-serif ;
   --bs-btn-font-size: 1.1rem;
   --bs-btn-font-weight: 500;
   --bs-btn-line-height: 1.5;
@@ -44527,7 +44527,7 @@ html:not([data-theme=dark]) {
 }
 
 html {
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Tajawal', sans-serif;
   text-size-adjust: 100%;
 }
 
@@ -44540,7 +44540,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 13px !important;
   font-weight: 400;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Tajawal', sans-serif;
 }
 @media (max-width: 991.98px) {
   html,
