@@ -460,14 +460,21 @@ var KTWidgets = function () {
                     bar: {
                         horizontal: false,
                         columnWidth: ['10%'],
-                        borderRadius: 4
+                        borderRadius: 4,
+                        dataLabels: {
+                            position: 'top', // Place data labels at the top of each bar
+                            style: {
+                                fontSize: '12px',
+                                colors: KTUtil.getCssVariableValue('--kt-gray-900') // Color of the data labels
+                            },
+                            formatter: function(val) {
+                                return val; // Customize the format of the data labels if needed
+                            }
+                        }
                     },
                 },
                 legend: {
                     show: false
-                },
-                dataLabels: {
-                    enabled: false
                 },
                 stroke: {
                     show: true,
