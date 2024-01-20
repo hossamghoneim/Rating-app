@@ -543,8 +543,8 @@ var KTChartsWidget12 = function () {
 
         var options = {
             series: [{
-                name: '',
-                data: [veryGoodCount, goodCount, acceptableCount, poorCount]
+                name: 'Net Profit',
+                data: data
             }],
             chart: {
                 fontFamily: 'inherit',
@@ -609,6 +609,9 @@ var KTChartsWidget12 = function () {
                     style: {
                         colors: KTUtil.getCssVariableValue('--bs-gray-500'),
                         fontSize: '13px'
+                    },
+                    formatter: function (val) {
+                        return parseInt(val)
                     }
                 }
             },
@@ -642,7 +645,7 @@ var KTChartsWidget12 = function () {
                 },
                 y: {
                     formatter: function (val) {
-                        return "Number of users rate: " + val + " "
+                        return "$" + val + " thousands"
                     }
                 }
             },
@@ -673,7 +676,7 @@ var KTChartsWidget12 = function () {
     // Public methods
     return {
         init: function () {
-            initChart('#kt_charts_widget_12_tab_1', '#kt_charts_widget_12_chart_1', [54, 42, 75, 110, 23, 87, 50], true);
+            initChart('#kt_charts_widget_12_tab_1', '#kt_charts_widget_12_chart_1', [veryGoodCount, goodCount, acceptableCount, poorCount], true);
             initChart('#kt_charts_widget_12_tab_2', '#kt_charts_widget_12_chart_2', [25, 55, 35, 50, 45, 20, 31], false);
             initChart('#kt_charts_widget_12_tab_3', '#kt_charts_widget_12_chart_3', [45, 15, 35, 70, 45, 50, 21], false);
         }

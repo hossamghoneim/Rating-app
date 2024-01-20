@@ -39,6 +39,15 @@
                     </a>
                 </div>
 
+                <div class="menu-item">
+                    <a class="menu-link {{ isTabActive('dashboard.edit-profile') }}" href="{{ route('dashboard.edit-profile') }}"  data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                    <span class="menu-icon">
+                            <i class="fa fa-gear"></i>
+                    </span>
+                    <span class="menu-title">{{__("Account Settings")}}</span>
+                    </a>
+                </div>
+
             </div>
             <!--end::Menu-->
         </div>
