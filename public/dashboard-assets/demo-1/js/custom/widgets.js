@@ -459,7 +459,7 @@ var KTWidgets = function () {
                 plotOptions: {
                     bar: {
                         horizontal: false,
-                        columnWidth: ['10%'],
+                        columnWidth: ['14%'],
                         borderRadius: 4,
                         dataLabels: {
                             position: 'top', // Place data labels at the top of each bar
