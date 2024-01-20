@@ -13,7 +13,7 @@ class UploadImageInp extends Component
 
     public function __construct($image,$directory,$placeholder , $name, $type)
     {
-        $this->imagePath = getImagePath( $image , $directory , $placeholder );
+        $this->imagePath = getImagePathFromDirectory( $image , $directory , $placeholder );
         $this->name      = $name;
         $this->type      = $type;
     }

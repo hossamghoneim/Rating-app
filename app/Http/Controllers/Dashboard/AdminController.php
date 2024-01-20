@@ -86,7 +86,7 @@ class AdminController extends Controller
 
         $data = $request->validate([
             'name'     => ['required', 'string', 'max:255'],
-            'phone'    => ['required','string','max:255','unique:admins,id,' . auth()->id() ,'regex:/(^(009665|9665|\+9665|966|05|5)(5|0|3|6|4|9|1|8|7)([0-9]{7})$)/u'],
+            'phone'    => ['required','string','max:255','unique:admins,id,' . auth()->id()],
             'email'    => ['required','string','email','unique:admins,id,' . auth()->id() ],
             'image'    => ['nullable','mimes:jpeg,jpg,png,gif,svg' , 'max:10000'] ,
         ]);
@@ -102,7 +102,7 @@ class AdminController extends Controller
     public function updatePassword(Request $request){
 
         $data = $request->validate([
-            'password'              => ['required','string','min:6','max:255','confirmed'],
+            'password'              => ['required','string','min:8','max:255','confirmed'],
             'password_confirmation' => ['required','same:password'],
         ]);
 

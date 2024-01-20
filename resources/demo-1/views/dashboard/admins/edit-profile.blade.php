@@ -78,21 +78,6 @@
                     <div class="card-body  p-9">
 
                         <!--begin::Input group-->
-                        <div class="row mb-15">
-                            <label class="col-lg-2 required fs-5 fw-bold mb-2 d-flex align-items-center">{{ __("Image") }}</label>
-
-                            <div class="col-lg-10 form-floating text-center">
-
-                                <!--begin::Image input-->
-                                <x-dashboard.upload-image-inp name="image" :image="auth()->user()->image" directory="Admins" placeholder="default.jpg" type="show"></x-dashboard.upload-image-inp>
-                                <p class="invalid-feedback" id="image"></p>
-                                <!--end::Image input-->
-
-                            </div>
-                        </div>
-                        <!--end::Input group-->
-
-                        <!--begin::Input group-->
                         <div class="row mb-6">
                             <label class="col-lg-2 required fs-5 fw-bold mb-2 d-flex align-items-center">{{ __("Name") }}</label>
 
