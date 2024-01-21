@@ -11,17 +11,20 @@
     <link rel="icon" href="#" type="image/gif" sizes="16x16">
 
     <!--begin::Fonts-->
-    @if ( isArabic() )
-        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    @else
-        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-    @endif
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap" rel="stylesheet">
     <!--end::Fonts-->
 
     <!--begin::Global Stylesheets Bundle(used by all pages)-->
     <link href="{{ asset('dashboard-assets/demo-1/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{  asset('dashboard-assets/demo-1/css/style'  . '.bundle' . ( isArabic() ? '.rtl' : '' ) . '.css')}}" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
+    <style>
+    * :not(i){
+        font-family: "Tajawal", Helvetica, "sans-serif" !important;
+    }
+    </style>
 
 </head>
 <!--end::Head-->

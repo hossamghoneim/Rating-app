@@ -260,6 +260,9 @@
                                                                 style="font-size: 20px; line-height: 150%; text-align: left; word-wrap: break-word;">
                                                                 <ul style="list-style-type: square;">
                                                                     <li style="line-height: 30px;">
+                                                                        {{ 'Date' . ' : ' . now()->toDateString() }}
+                                                                    </li>
+                                                                    <li style="line-height: 30px;">
                                                                         {{ 'All rates' . ' : ' . $allRatesCount }}
                                                                     </li>
                                                                     <li style="line-height: 30px;">
@@ -273,9 +276,6 @@
                                                                     </li>
                                                                     <li style="line-height: 30px;">
                                                                         {{ 'Poor' . ' : ' . $poorCount }}
-                                                                    </li>
-                                                                    <li style="line-height: 30px;">
-                                                                        {{ 'Date' . ' : ' . now()->toDateString() }}
                                                                     </li>
                                                                 </ul>
                                                             </div>
