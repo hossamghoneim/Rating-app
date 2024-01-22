@@ -543,7 +543,7 @@ var KTChartsWidget12 = function () {
 
         var options = {
             series: [{
-                name: 'Net Profit',
+                name: '',
                 data: data
             }],
             chart: {
