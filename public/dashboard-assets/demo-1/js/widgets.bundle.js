@@ -645,7 +645,7 @@ var KTChartsWidget12 = function () {
                 },
                 y: {
                     formatter: function (val) {
-                        return "$" + val + " thousands"
+                        return "Number of users rate: " + val + " "
                     }
                 }
             },
